@@ -202,8 +202,7 @@ function game() {
 // catSprite.attractionPoint(
 //     speedCat,
 //     playerSprite.position.x,
-//     playerSprite.position.y
-// );
+//     playerSprite.position.y);
 // drawSprites();
 
     }
@@ -289,8 +288,11 @@ class Player {
     
     }
 
+    //Code below was to get the player to face the direction in which they were going. This, the cat following the player and
+    //Seeing the cheese was all working but something has broken the code and we can no longer see any of it.
+
     setDirection(){
-        //booleen
+        //boolean
         if(!this.isMoving){
                          
             if (key==="w"){
@@ -432,9 +434,8 @@ class Cat {
 }
 
 //Code to get mouse to follow player - this was working but cat was going through collisions, couldn't figure out
-//How to avoid this. Code for some reason suddenly broke and you now can't see the cat, even though the console log is showing it's
-//position on the console.
-
+//How to avoid this. 
+    
 followPlayer(playerX,playerY){
 
     if(this.xPos <playerX){
@@ -478,7 +479,7 @@ display(){
 //     translate(this.x,this.y)
 //     scale(this.s)
 //     image(cheese,0,0)
-// }
+ }
 }
         
         //CONVERT SINGLE DIGIT NUMBERS TO TWO-DIGIT NUMBERS
@@ -491,9 +492,6 @@ display(){
         //     twoDigitTileID = this.tileID;
         // }
     
-
-
-        //LABEL
 
         class Cheese{
             constructor(sprite, x, y, size, points){
