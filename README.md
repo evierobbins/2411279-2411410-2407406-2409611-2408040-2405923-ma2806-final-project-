@@ -19,6 +19,8 @@ Liz - My contribution was originally adding in original art work for the game. T
 
 Micha - My role was to help with the movement of the player by using the W, A, S and D keys. Though it was working at first, the player was only moving one block at a time but we needed it to move continuously as long as one of the keys was held down in which I tried to figure out how to do so. After some debugging, I was able to get this to work but the player movement was too slow and was sometimes going through the walls. To fix this, I changed a few things such as changing some of the variables and trying out a few solutions from online forums and videos but it somehow was still not working so I ended up going back to the previous code. Though challenging, I was able to somewhat get the player to move though it was not how we wanted it to be; more debugging and time would have helped greatly in figuring out the solution to this problem.
 
+Molly -  I took part in helping with the movements of the sprite in our game. Due to only getting the sprite to move in bits, a lot of trial and error was done, along with some support from p5.js along with our worsshop's notion class lessons. With more attempts with my code I managed to get the character to move a little more smoothly, however this didn't last for long as I tried to get it the same with all directions, despite trying to debug it. After more attempts of moving the sptite correctly, I decided to leave it as what I got, which was still a movable character using keys. However, with more time and skill, I'd be able to be more confident in what I'd need to do.
+
 ## Themes and Inspirations
 
 Cat and mouse, Pacman style, Maze, 90s theme graphics/game inspired by beloved childhood TV show Tom and Jerry
