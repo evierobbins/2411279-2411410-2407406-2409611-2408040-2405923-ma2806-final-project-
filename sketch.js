@@ -480,7 +480,7 @@ display(){
 //     scale(this.s)
 //     image(cheese,0,0)
  }
-}
+
         
         //CONVERT SINGLE DIGIT NUMBERS TO TWO-DIGIT NUMBERS
         //Convert all one-digit tileIDs to two-digit (i.e. 0 becomes 00, 1 becomes 01, 2 becomes 01 etc.).
