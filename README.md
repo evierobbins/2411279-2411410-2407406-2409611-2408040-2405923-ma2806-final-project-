@@ -22,6 +22,9 @@ Micha - My role was to help with the movement of the player by using the W, A, S
 Molly -  I took part in helping with the movements of the sprite in our game. Due to only getting the sprite to move in bits, a lot of trial and error was done, along with some support from p5.js along with our worsshop's notion class lessons. With more attempts with my code I managed to get the character to move a little more smoothly, however this didn't last for long as I tried to get it the same with all directions, despite trying to debug it. After more attempts of moving the sptite correctly, I decided to leave it as what I got, which was still a movable character using keys. However, with more time and skill, I'd be able to be more confident in what I'd need to do.
 
 Emma- My role in the group was to help the game with classes and tiles essentially with the overall movement some of the code was used from the notion lectures. The classes code help the game to become more accessible and simple to use, the classes has its own abilties and strengths allowing the game to run more smoothly. I aslo used help from p5.js and Molly within the group our code was more of a team collabration so nobody was left really strugglling on their own.
+
+Tyreese - my efforts were allocated towards debugging and adding enemy classes as well as redesigning the tile maps configuration to try to stop bugs with the speed of the mouse when collisions are overridden. Working through the code backwards to try to help fix the issues that occured after adding the enemies. Tried adding a follow player element in their movement and was unable to get it to work unfortunately.
+
 ## Themes and Inspirations
 
 Cat and mouse, Pacman style, Maze, 90s theme graphics/game inspired by beloved childhood TV show Tom and Jerry
