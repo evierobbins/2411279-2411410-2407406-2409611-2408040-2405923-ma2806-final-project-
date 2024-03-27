@@ -83,12 +83,14 @@ textures[0] = loadImage("grass3.path.png");
 textures[1] = loadImage("grass2.path.png");
 
 //Attempting to make the mouse player face the way in which it is going
-playerSprites = {
-    up: loadImage("mouse.up.png"),
-    left: loadImage("mouse-left.png"),
-    down: loadImage("mouse-down.png"),
-    right: loadImage("mouse-right.png")
-}
+// playerSprites = {
+//     up: loadImage("mouse.up.png"),
+//     left: loadImage("mouse-left.png"),
+//     down: loadImage("mouse-down.png"),
+//     right: loadImage("mouse-right.png")
+// }
+
+playerSprites = loadImage("mouse.up.png");
 
 
 
@@ -97,7 +99,7 @@ playerSprites = {
 // playerSpriteRight = loadImage("mouse-right.png")
 // playerSpriteLeft = loadImage("mouse-left.png");
 // playerSpriteDown = loadImage("mouse-down.png");
-catSprite = loadImage("black.cat.png");
+catSprite = loadImage("ginger.cat.jpg");
 //Original plan was to have 3/4 different mazes with a sidescroller feature that player moves through,
 //With some of the mazes having multiple cats that follow the player, however we didn't end up being able to complete this.
 //We do however have our other cat sprites made as well as some other tile images which will be attached to the folder.
@@ -284,7 +286,7 @@ class Player {
         //X and Y position of tile player is moving to
         this.tx = this.xPos;
         this.ty = this.yPos;
-        this.currentSprite = this.sprites.down;
+        //this.currentSprite = this.sprites.down;
     
     }
 
@@ -298,23 +300,23 @@ class Player {
             if (key==="w"){
                 this.dirX = 0;
                 this.dirY = -1;
-                this.currentSprite = this.sprites.up;
+                this.sprites = this.sprites.up;
             }
 
             if (key==="s"){
                 this.dirX = 0;
                 this.dirY = 1;
-                this.currentSprite = this.sprites.down;
+                this.sprites = this.sprites.down;
             }
             if (key==="a"){
                 this.dirX = -1;
                 this.dirY = 0;
-                this.currentSprite = this.sprites.left;
+                this.sprites = this.sprites.left;
             }
             if (key==="d"){
                 this.dirX = 1;
                 this.dirY = 0;
-                this.currentSprite = this.sprites.right;
+                this.sprites = this.sprites.right;
             }
             this.checkTargetTile();
         
@@ -367,7 +369,7 @@ class Player {
 
     display(){
         imageMode(CORNER);
-        image(this.sprites,this.xPos,this.yPos,this.size,this.size);
+        image(this.sprites,this.xPos,this.yPos,50,50);
     }
 }
 //Our tile class
@@ -506,4 +508,6 @@ display(){
                 image(this.sprite,this.x,this.y,this.size,this.size);
             }
         }
+
+
 
